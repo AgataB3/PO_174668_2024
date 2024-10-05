@@ -1,0 +1,70 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("1:");
+        System.out.println("23.0+76 = double");
+        System.out.println("41*2.0+3 = double");
+        System.out.println("5-33 = int");
+        System.out.println("109%3 = int");
+        System.out.println("50/2 = int");
+        System.out.println("4|2 = int");
+        System.out.println("3^5 = int");
+        System.out.println("7&9 = int");
+
+        System.out.println("2:");
+        double dzialanie = ((Math.sqrt(7)-1)/2)+Math.pow(3, 3)%2;
+        int rzut = (int)dzialanie;
+        System.out.println(rzut);
+        double dzialanie2 = 2003/(7*4);
+        int rzut2 = (int)dzialanie2;
+        System.out.println(rzut2);
+        double dzialanie3 = (3+Math.sqrt(3))/((Math.sqrt(5)/2)/3)+1;
+        int rzut3 = (int)dzialanie3;
+        System.out.println(rzut3);
+        double dzialanie4 = 30%20%6;
+        int rzut4 = (int)dzialanie4;
+        System.out.println(rzut4);
+        double dzialanie5 = (5%5+1)/Math.pow(2, 1/4);
+        int rzut5 = (int)dzialanie5;
+        System.out.println(rzut5);
+
+        System.out.println("3:");
+        Scanner czytnik = new Scanner(System.in);
+        System.out.println("Podaj 2 słowa:");
+        String slowo1 = czytnik.nextLine();
+        String slowo2 = czytnik.nextLine();
+        System.out.println("Słowo 1: "+slowo1);
+        System.out.println("Słowo 2: " +slowo2);
+
+        System.out.println("4:");
+        Scanner czytnik2 = new Scanner(System.in);
+        System.out.println("Podaj 2 liczby:");
+        int liczba1 = czytnik2.nextInt();
+        int liczba2 = czytnik2.nextInt();
+        int suma = liczba1+liczba2;
+        int roznica = liczba1-liczba2;
+        int iloczyn = liczba1*liczba2;
+        int iloraz = liczba1/liczba2;
+        System.out.println("Suma: "+suma);
+        System.out.println("Roznica: " +roznica);
+        System.out.println("Iloczyn: " +iloczyn);
+        System.out.println("Iloraz: " +iloraz);
+
+        System.out.println("5:");
+        Scanner czytnik3 = new Scanner(System.in);
+        System.out.println("Podaj x:");
+        double x = czytnik3.nextDouble();
+        System.out.println(x+140);
+        System.out.println(x-31);
+        System.out.println(x*7);
+        System.out.println(x/13);
+        System.out.println(x%7);
+        System.out.println((int)x/4);
+        System.out.println(Math.pow(x, 45));
+        System.out.println((int)x&67);
+        System.out.println((int)x|59);
+        System.out.println((int)x^23);
+        System.out.println((int)x<<5);
+        System.out.println((int)x>>6);
+    }
+}
