@@ -1,0 +1,132 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+class Zestaw1{
+    public static void main(String[] args) {
+        String txt = "Agata Bronk";
+        System.out.println("1: " +txt);
+
+        System.out.println("2: " +txt.length());
+
+        String Ala = "Ala";
+        String ma = "ma";
+        String kota = "kota";
+        String zdanie_alamakota = Ala+" "+ma+" "+kota;
+        System.out.println("3: "+zdanie_alamakota);
+
+        System.out.println("4.1:");
+        System.out.println("                    *");
+        System.out.println("                    * *");
+        System.out.println("                    * * *");
+        System.out.println("* * * * * * * * * * * * * *");
+        System.out.println("* * * * * * * * * * * * * * *");
+        System.out.println("* * * * * * * * * * * * * *");
+        System.out.println("                    * * *");
+        System.out.println("                    * *");
+        System.out.println("                    *");
+        System.out.println("4.2:");
+        System.out.println("     *");
+        System.out.println("    * *");
+        System.out.println("   * * *");
+        System.out.println("  * * * *");
+        System.out.println(" * * * * *");
+        System.out.println("* * * * * *");
+        System.out.println(" * * * * *");
+        System.out.println("  * * * *");
+        System.out.println("   * * *");
+        System.out.println("    * *");
+        System.out.println("     *");
+
+        System.out.println("5:");
+        String zd1 = "Ala ma kota";
+        String zd2 = zd1.replace("a", "e");
+        System.out.println(zd2);
+
+        System.out.println("6:");
+        String zd3 = zd1.toUpperCase();
+        System.out.println(zd3);
+        String zd4 = zd1.toLowerCase();
+        System.out.println(zd4);
+
+        System.out.println("7:");
+        char znak1 = 'A';
+        char znak2 = '!';
+        char znak3 = '@';
+        char znak4 = '>';
+        char znak5 = '~';
+        char znak6 = '\n';
+        char znak7 = '\b';
+
+        int ascii1 = znak1;
+        int ascii2 = znak2;
+        int ascii3 = znak3;
+        int ascii4 = znak4;
+        int ascii5 = znak5;
+        int ascii6 = znak6;
+        int ascii7 = znak7;
+
+        System.out.println(znak1+" = "+ascii1);
+        System.out.println(znak2+" = "+ascii2);
+        System.out.println(znak3+" = "+ascii3);
+        System.out.println(znak4+" = "+ascii4);
+        System.out.println(znak5+" = "+ascii5);
+        System.out.println("\\n"+" = "+ascii6);
+        System.out.println("\\b"+" = "+ascii7);
+
+        System.out.println("8:");
+        char ml1 = 'a';
+        int ascii_ml1 = ml1;
+        char ml2 = 'z';
+        int ascii_ml2 = ml2;
+        System.out.println("Male litery: "+ascii_ml1+" - "+ascii_ml2);
+        char dl1 = 'A';
+        int ascii_dl1 = dl1;
+        char dl2 = 'Z';
+        int ascii_dl2 = dl2;
+        System.out.println("Duze litery: "+ascii_dl1+" - "+ascii_dl2);
+        char c1 = '0';
+        int ascii_c1 = c1;
+        char c2 = '9';
+        int ascii_c2 = c2;
+        System.out.println("Cyfry: "+ascii_c1+" - "+ascii_c2);
+
+        System.out.println("9:");
+        String zdanie = "Grzesiek nie wiedział dlaczego ... jest tak drapieżnym ... mimo, że jego ... na to nie wskazuje.";
+        zdanie = zdanie.replaceFirst("\\.\\.\\.", "lew");
+        zdanie = zdanie.replaceFirst("\\.\\.\\.", "stworzeniem");
+        zdanie = zdanie.replaceFirst("\\.\\.\\.", "wygląd");
+        System.out.println(zdanie);
+
+        System.out.println("10:");
+        String zdanie2 = "... to najlepsza ksiazka napisana przez ...";
+        zdanie2 = zdanie2.replaceFirst("\\.\\.\\.", "Pacjentka");
+        zdanie2 = zdanie2.replaceFirst("\\.\\.\\.", "Alexa Michaelidesa");
+        System.out.println(zdanie2);
+
+        System.out.println("11:");
+        String wodrze = "wodrze".repeat(5);
+        System.out.println(wodrze);
+
+        System.out.println("12:");
+        LocalDateTime teraz = LocalDateTime.now();
+        DateTimeFormatter formatDaty = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        DateTimeFormatter formatGodziny = DateTimeFormatter.ofPattern("HH:mm:ss");
+        System.out.println("Dzisiaj jest (" + teraz.format(formatDaty) + ") godzina (" + teraz.format(formatGodziny) + ")");
+
+        System.out.println("13:");
+        char liczba1 = 54;
+        System.out.println("54 - "+liczba1);
+        char liczba2 = 103;
+        System.out.println("103 - "+liczba2);
+        char liczba3 = 241;
+        System.out.println("241 - "+liczba3);
+        char liczba4 = 67;
+        System.out.println("67 - "+liczba4);
+        char liczba5 = 9999;
+        System.out.println("9999 - "+liczba5);
+        char liczba6 = 10;
+        System.out.println("10 - "+liczba6);
+        char liczba7 = 668;
+        System.out.println("668 - "+liczba7);
+    }
+}
